@@ -21,6 +21,7 @@ const saveEvent = async (request, response) => {
 
   try {
     const eventRef = await addDoc(collection(db, 'events'), {
+      attendedEvent: bodyData.attendedEvent,
       zoneNumber: bodyData.zoneNumber,
       accountNumber: bodyData.accountNumber,
       eventCode: bodyData.eventCode,
