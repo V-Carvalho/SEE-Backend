@@ -19,6 +19,8 @@ const saveEvent = async (request, response) => {
   const bodyData = request.body;
   console.log(bodyData)
 
+  // TODO: Fazer um loop para validar o tipo/nome do evento => tableContactId
+
   try {
     const eventRef = await addDoc(collection(db, 'events'), {
       attendedEvent: bodyData.attendedEvent,

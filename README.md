@@ -1,4 +1,4 @@
-# 📡 SEE API Database
+# 📡 SEE Backend
 
 API para receber os eventos do SEE Transmitter e salvar no firebase.
 
